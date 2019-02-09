@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{ object.product_name }}</h1><br/>
+    {{ object.product_description }}<br/>
+    {% if object.product_image %}
+        <img src="{{ object.product_image.url }}" height="200" width="auto">
+    {% endif %}
+    
+</body>
+</html>
